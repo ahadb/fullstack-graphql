@@ -8,7 +8,8 @@ const app = express();
 
 app.use(cors());
 
-const CONNECTION_URL = "mongodb+srv://ahadbokhari:Advanced75@cluster0.yg4iqxz.mongodb.net/?retryWrites=true&w=majority";
+// your connection url
+const CONNECTION_URL = "";
 mongoose.connect(CONNECTION_URL);
 mongoose.connection.once('open', () => {
   console.log('Connection to DB successful');
